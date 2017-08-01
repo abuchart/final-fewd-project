@@ -1,0 +1,78 @@
+* {
+	font-family: 'Poiret One', cursive;
+}
+
+a {
+	color: black;
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+/*Landing Page*/
+
+
+/*Navigation Bar*/
+#container {
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: space-between;
+	align-items: baseline;
+	margin: 0 auto;
+}
+
+.site-title {
+	flex: 0 1 auto;
+	margin: 0;
+	font-family: 'Lobster', cursive;
+	float: left;
+}
+
+.nav-bar {
+	list-style-type: none;
+	margin: 0;
+}
+
+ul li {
+	display: inline-block;
+}
+
+.resume-nav {
+	flex: 0 1 auto;
+	padding: 0 5px;
+	flex: 0 1 auto;
+}
+
+.portfolio-nav {
+	flex: 0 1 auto;
+	padding: 0 5px;
+	flex: 0 1 auto;
+}
+
+.about-nav {
+	flex: 0 1 auto;
+	padding: 0 5px;
+	flex: 0 1 auto;
+}
+
+.contact-nav {
+	flex: 0 1 auto;
+	padding: 0 8px 0 5px;
+	flex: 0 1 auto;
+}
+
+/*RESUME*/
+.resume-styles {
+	text-align: center;
+}
+
+.jobs-styles {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/*ABOUT ME*/
+.about-me-paragraph {
+	text-align: center;
+}
