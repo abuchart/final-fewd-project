@@ -6,11 +6,8 @@ a {
 	color: black;
 }
 
-a:visited {
-    text-decoration: underline;
-}
-
 /*Landing Page*/
+/*use parallax with an image here*/
 
 
 /*Navigation Bar*/
@@ -34,7 +31,7 @@ a:visited {
 	margin: 0;
 }
 
-ul li {
+.nav-bar li {
 	display: inline-block;
 }
 
@@ -62,9 +59,14 @@ ul li {
 	flex: 0 1 auto;
 }
 
+
+
 /*RESUME*/
 .resume-styles {
 	text-align: center;
+	margin: 0 auto;
+	width: 60%;
+	background-color: #A8A8A8;
 }
 
 .jobs-styles {
@@ -72,7 +74,22 @@ ul li {
 	text-decoration: underline;
 }
 
+.education-resume {
+	list-style-type: none;
+}
+
+.community-resume {
+	list-style-type: none;
+}
+
+.skills-resume {
+	list-style-type: none;
+}
+
 /*ABOUT ME*/
 .about-me-paragraph {
 	text-align: center;
+	margin: 0 auto;
+	width: 60%;
+	background-color: #A8A8A8;
 }
