@@ -4,19 +4,22 @@
 
 a {
 	color: black;
+	text-decoration: none;
 }
 
-/*Landing Page*/
 /*use parallax with an image here*/
 
 
-/*Navigation Bar*/
+/************************************/
+/**********Navigation Bar************/
+/************************************/
 #container {
 	display: flex;
 	flex-flow: wrap row;
 	justify-content: space-between;
 	align-items: baseline;
 	margin: 0 auto;
+	background: #FAF9F8;
 }
 
 .site-title {
@@ -60,8 +63,41 @@ a {
 }
 
 
+footer {
+	text-align: center;
+}
 
-/*RESUME*/
+
+/*********SEXY NAVIGATION MOVEMENT********/
+
+
+/***********************************/
+/*************SPLASH PAGE***********/
+/***********************************/
+.landing-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+	font-size: 45px;
+}
+
+#splash-image {
+	background: url(./photos/splash-image.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+/*********************************/
+/*************RESUME**************/
+/*********************************/
+.resume-background-color {
+	background: #FAF9F8;
+}
+
 .resume-styles {
 	text-align: center;
 	margin: 0 auto;
@@ -86,10 +122,63 @@ a {
 	list-style-type: none;
 }
 
-/*ABOUT ME*/
+
+/****************************/
+/*********MY PORTFOLIO*******/
+/****************************/
+.my-portfolio-background-color {
+	background: #FAF9F8;
+}
+
+.portfolio-header-font {
+	font-size: 10px;
+	font-style: italic;
+}
+
+.portfolio-order {
+	display: flex;
+	margin: 0 auto;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.my-first-site {
+	padding: 30px 60px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+.my-second-site {
+	padding: 30px 60px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+.my-third-site {
+	padding: 30px 60px;
+	border: 1px solid black;
+	margin: 0 auto;	
+}
+
+
+/*******************************/
+/************ABOUT ME**********/
+/******************************/
+.about-me-background-color {
+	background: #FAF9F8;
+}
+
 .about-me-paragraph {
 	text-align: center;
 	margin: 0 auto;
 	width: 60%;
 	background-color: #A8A8A8;
+}
+
+
+/***************************/
+/*********CONTACT ME********/
+/***************************/
+.contact-me-background-color {
+	background: #FAF9F8;
 }
