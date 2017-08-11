@@ -7,6 +7,8 @@ a {
 	text-decoration: none;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
 /*use parallax with an image here*/
 
 
@@ -27,6 +29,7 @@ a {
 	margin: 0;
 	font-family: 'Lobster', cursive;
 	float: left;
+	padding-left: 8px;
 }
 
 .nav-bar {
@@ -64,13 +67,25 @@ a {
 
 .portfolio-footer {
 	position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
 }
 
 footer {
+  font-family: 'Lato', sans-serif;
+  color: #70706F;
+  font-size: 12px;
 	text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 
@@ -81,16 +96,16 @@ footer {
 /*************SPLASH PAGE***********/
 /***********************************/
 .landing-page {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 	font-size: 45px;
-	padding: 5px;
-    background: white;
-    opacity: .5;
-    border: solid #f9f7f7 5px;
-    width: 290px;
+	padding: 1px;
+  background: white;
+  opacity: .5;
+  border: solid #f9f7f7 5px;
+  width: 290px;
 }
 
 #splash-image {
@@ -113,6 +128,7 @@ footer {
 	margin: 0 auto;
 	width: 60%;
 	background-color: #A8A8A8;
+	overflow: hidden
 }
 
 .jobs-styles {
@@ -183,6 +199,7 @@ footer {
 	margin: 0 auto;
 	width: 60%;
 	background-color: #A8A8A8;
+	overflow: hidden
 }
 
 
@@ -192,3 +209,161 @@ footer {
 .contact-me-background-color {
 	background: #FAF9F8;
 }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+ on hover placeholder 
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 502px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+
+/*****************************
+/*********MEDIA QUERIES********/
+/******************************/
