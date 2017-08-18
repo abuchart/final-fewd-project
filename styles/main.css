@@ -1,25 +1,21 @@
-* {
-	font-family: 'Poiret One', cursive;
-}
-
 a {
 	color: black;
 	text-decoration: none;
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
 }
-
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
-
-/*use parallax with an image here*/
 
 
 /************************************/
 /**********Navigation Bar************/
 /************************************/
-#container {
+.container {
+  font-family: 'Playfair Display SC', serif;
 	display: flex;
 	flex-flow: wrap row;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 	margin: 0 auto;
 	background: #FAF9F8;
 }
@@ -27,9 +23,10 @@ a {
 .site-title {
 	flex: 0 1 auto;
 	margin: 0;
-	font-family: 'Lobster', cursive;
+  font-family: 'Mrs Saint Delafield', cursive;
 	float: left;
 	padding-left: 8px;
+  padding-top: 5px;
 }
 
 .nav-bar {
@@ -88,6 +85,9 @@ footer {
   left: 0;
 }
 
+img {
+  width: 100%;
+}
 
 /*********SEXY NAVIGATION MOVEMENT********/
 
@@ -106,6 +106,7 @@ footer {
   opacity: .5;
   border: solid #f9f7f7 5px;
   width: 290px;
+  font-size: 36px;
 }
 
 #splash-image {
@@ -117,35 +118,119 @@ footer {
 }
 
 /*********************************/
-/*************RESUME**************/
+/*************ABOUT ME**************/
 /*********************************/
-.resume-background-color {
-	background: #FAF9F8;
+/*
+Icon color: #C26904*/
+
+/******ABOUT ME STYLES*******/
+.about-background-image {
+  background: url(./photos/office-image.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
 }
 
-.resume-styles {
+.about-styles {
 	text-align: center;
 	margin: 0 auto;
-	width: 60%;
-	background-color: #A8A8A8;
+	width: 100%;
 	overflow: hidden
 }
 
+.date-styles {
+  font-style: italic;
+  padding: 5px 10px 5px 10px;
+  margin: 0 auto;
+}
+
+.about-me-headers {
+  background-color: white;
+  opacity: .7;
+  width: 100%;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+}
+
+.about-me-bottom-padding {
+  background-color: white;
+  opacity: .7;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 0 24px 0;
+}
+
+.padding-main {
+  padding: 5px 10px 5px 30px;
+  margin: 0 auto;
+}
+
+.padding-body {
+  padding: 5px 30px 5px 30px;
+  margin: 0 auto;
+}
+
+.row-one-wrapper {
+  margin: 300px 0 100px 0;  
+}
+
+.row-one {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #FAF9F8;
+  margin: 0 auto;
+}
+
+.row-two-wrapper {
+  margin: 300px 0 100px 0;  
+}
+
+.row-two {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #FAF9F8;
+  margin: 0 auto;
+}
+
+.row-three-wrapper {
+  margin: 300px 0 100px 0;  
+}
+
+.row-three {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #FAF9F8;
+  margin: 0 auto;
+}
+
+.row-four-wrapper {
+  margin: 300px 0 100px 0;  
+}
+
+.row-four {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #FAF9F8;
+  margin: 0 auto;
+}
+
 .jobs-styles {
-	font-weight: bold;
-	text-decoration: underline;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
 }
 
-.education-resume {
-	list-style-type: none;
-}
-
-.community-resume {
-	list-style-type: none;
-}
-
-.skills-resume {
-	list-style-type: none;
+.about-body-font {
+  font-family: 'Muli', sans-serif;
+  padding-left: 10px;
 }
 
 
@@ -184,22 +269,6 @@ footer {
 	padding: 30px 60px;
 	border: 1px solid black;
 	margin: 0 auto;	
-}
-
-
-/*******************************/
-/************ABOUT ME**********/
-/******************************/
-.about-me-background-color {
-	background: #FAF9F8;
-}
-
-.about-me-paragraph {
-	text-align: center;
-	margin: 0 auto;
-	width: 60%;
-	background-color: #A8A8A8;
-	overflow: hidden
 }
 
 
@@ -364,6 +433,12 @@ textarea:hover {
 }
 
 
-/*****************************
+/*****************************/
 /*********MEDIA QUERIES********/
 /******************************/
+
+@media (min-width: 320px) {
+  #phone {
+    display: block;
+  }
+}
