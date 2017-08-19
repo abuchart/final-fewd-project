@@ -120,15 +120,12 @@ img {
 /*********************************/
 /*************ABOUT ME**************/
 /*********************************/
-/*
-Icon color: #C26904*/
 
-/******ABOUT ME STYLES*******/
-.about-background-image {
+/*.about-background-image {
   background: url(./photos/office-image.jpg) no-repeat center center fixed;
   background-size: cover;
   width: 100%;
-}
+}*/
 
 .about-styles {
 	text-align: center;
@@ -139,7 +136,17 @@ Icon color: #C26904*/
 
 .date-styles {
   font-style: italic;
-  padding: 5px 10px 5px 10px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+.padding-main {
+  margin: 0 auto;
+  padding: 0 10px 0 70px;
+}
+
+.padding-body {
+  padding: 20px 70px 20px 35px;
   margin: 0 auto;
 }
 
@@ -158,17 +165,7 @@ Icon color: #C26904*/
   opacity: .7;
   width: 100%;
   margin: 0 auto;
-  padding: 24px 0 24px 0;
-}
-
-.padding-main {
-  padding: 5px 10px 5px 30px;
-  margin: 0 auto;
-}
-
-.padding-body {
-  padding: 5px 30px 5px 30px;
-  margin: 0 auto;
+  padding: 22px 0 22px 0;
 }
 
 .row-one-wrapper {
@@ -177,9 +174,7 @@ Icon color: #C26904*/
 
 .row-one {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
   background: #FAF9F8;
   margin: 0 auto;
 }
@@ -190,9 +185,7 @@ Icon color: #C26904*/
 
 .row-two {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
   background: #FAF9F8;
   margin: 0 auto;
 }
@@ -203,9 +196,7 @@ Icon color: #C26904*/
 
 .row-three {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
   background: #FAF9F8;
   margin: 0 auto;
 }
@@ -216,9 +207,7 @@ Icon color: #C26904*/
 
 .row-four {
   display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
   background: #FAF9F8;
   margin: 0 auto;
 }
@@ -230,9 +219,36 @@ Icon color: #C26904*/
 
 .about-body-font {
   font-family: 'Muli', sans-serif;
-  padding-left: 10px;
 }
 
+/*******PARALLAX STYLES********/
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+.parallax-container .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.parallax-container .parallax img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 
 /****************************/
 /*********MY PORTFOLIO*******/
