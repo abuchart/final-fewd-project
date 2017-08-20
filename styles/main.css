@@ -44,7 +44,7 @@ a {
 	flex: 0 1 auto;
 }
 
-.portfolio-nav {
+.gallery-nav {
 	flex: 0 1 auto;
 	padding: 0 5px;
 	flex: 0 1 auto;
@@ -62,7 +62,7 @@ a {
 	flex: 0 1 auto;
 }
 
-.portfolio-footer {
+.gallery-footer {
 	position: absolute;
   bottom: 0;
   right: 0;
@@ -95,6 +95,14 @@ img {
 /***********************************/
 /*************SPLASH PAGE***********/
 /***********************************/
+#splash-image {
+  background: url(./photos/splash-image.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .landing-page {
   position: absolute;
   top: 50%;
@@ -109,24 +117,9 @@ img {
   font-size: 36px;
 }
 
-#splash-image {
-	background: url(./photos/splash-image.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
 /*********************************/
 /*************ABOUT ME**************/
 /*********************************/
-
-/*.about-background-image {
-  background: url(./photos/office-image.jpg) no-repeat center center fixed;
-  background-size: cover;
-  width: 100%;
-}*/
-
 .about-styles {
 	text-align: center;
 	margin: 0 auto;
@@ -158,6 +151,7 @@ img {
   letter-spacing: 1.5px;
   margin: 0 auto;
   padding: 10px 0 10px 0;
+  text-align: center;
 }
 
 .about-me-bottom-padding {
@@ -168,19 +162,11 @@ img {
   padding: 22px 0 22px 0;
 }
 
-.row-one-wrapper {
-  margin: 300px 0 100px 0;  
-}
-
 .row-one {
   display: flex;
   align-items: center;
   background: #FAF9F8;
   margin: 0 auto;
-}
-
-.row-two-wrapper {
-  margin: 300px 0 100px 0;  
 }
 
 .row-two {
@@ -190,19 +176,11 @@ img {
   margin: 0 auto;
 }
 
-.row-three-wrapper {
-  margin: 300px 0 100px 0;  
-}
-
 .row-three {
   display: flex;
   align-items: center;
   background: #FAF9F8;
   margin: 0 auto;
-}
-
-.row-four-wrapper {
-  margin: 300px 0 100px 0;  
 }
 
 .row-four {
@@ -251,42 +229,83 @@ img {
 }
 
 /****************************/
-/*********MY PORTFOLIO*******/
+/*********MY GALLERY*******/
 /****************************/
-.my-portfolio-background-color {
-	background: #FAF9F8;
+.my-gallery-background-color {
+  background: #FAF9F8;
 }
 
-.portfolio-header-font {
-	font-size: 10px;
-	font-style: italic;
+.gallery-order {
+  display: flex;
+  margin: 0 auto;
+  flex-flow: row wrap;
 }
 
-.portfolio-order {
-	display: flex;
-	margin: 0 auto;
-	flex-flow: row wrap;
-	justify-content: flex-start;
+.my-first-hobby {
+  position: relative;
+  align-content: flex-start;
+  margin: 0 auto;
 }
 
-.my-first-site {
-	padding: 30px 60px;
-	border: 1px solid black;
-	margin: 0 auto;
+.hobby-image-one {
+  width: 70%;
+  padding: 5px;
 }
 
-.my-second-site {
-	padding: 30px 60px;
-	border: 1px solid black;
-	margin: 0 auto;
+.my-second-hobby {
+  position: relative;
+  align-content: flex-start;
+  margin: 0 auto;
 }
 
-.my-third-site {
-	padding: 30px 60px;
-	border: 1px solid black;
-	margin: 0 auto;	
+.hobby-image-two {
+  width: 70%;
+  padding: 5px;
 }
 
+.my-third-hobby {
+  position: relative;
+  align-content: flex-start;
+  margin: 0 auto; 
+}
+
+.hobby-image-three {
+  width: 70%;
+  padding: 5px;
+}
+
+.my-fourth-hobby {
+  position: relative;
+  align-content: flex-start;
+  margin: 0 auto; 
+}
+
+.hobby-image-four {
+  width: 70%;
+  padding: 5px;
+}
+
+.my-fifth-hobby {
+  position: relative;
+  align-content: flex-start;
+  margin: 0 auto; 
+}
+
+.hobby-image-five {
+  width: 70%;
+  padding: 5px;
+}
+
+.my-sixth-hobby {
+  position: relative;
+  align-content: flex-start;
+  margin: 0 auto; 
+}
+
+.hobby-image-six {
+  width: 70%;
+  padding: 5px;
+}
 
 /***************************/
 /*********CONTACT ME********/
