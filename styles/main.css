@@ -89,7 +89,8 @@ img {
 }
 
 .gallery-footer {
-	position: absolute;
+  clear: both;
+	position: relative;
   bottom: 0;
   right: 0;
   left: 0;
@@ -155,6 +156,18 @@ img {
   margin: 0 auto;
 }
 
+.skills-styles {
+  display: block;
+  padding-left: 100px;
+  float: left;
+}
+
+.skills-list-styles {
+  display: block;
+  padding-right: 100px;
+  float: right;
+}
+
 .about-me-headers {
   background-color: white;
   opacity: .7;
@@ -199,9 +212,16 @@ img {
 
 .row-four {
   display: flex;
-  align-items: center;
+  flex-flow: column wrap;
   background: #FAF9F8;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.row-five {
+  display: flex;
+  flex-flow: column wrap;
+  background: #FAF9F8;
+  margin: 0;
 }
 
 .jobs-styles {
@@ -250,44 +270,61 @@ img {
 }
 
 .gallery-order {
-  display: block;
+  display: flex;
   margin: 0;
+  justify-content: space-between;
+}
+
+.column-one {
+  flex-direction: column; 
+  flex-grow: 4;
 }
 
 .my-first-hobby {
-  float: left;
   width: 42%;
   padding: 10px;
+  margin: 0;
+  list-style-type: none;
 }
 
 .my-second-hobby {
-  float: left;
   width: 42%;
   padding: 10px;
+  margin: 0;
+  list-style-type: none;
 }
 
 .my-third-hobby {
-  float: left;
   width: 42%;
   padding: 10px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.column-two {
+  flex-direction: column;
+  flex-grow: 4;
 }
 
 .my-fourth-hobby {
-  float: left;
   width: 42%;
   padding: 10px; 
+  margin: 0;
+  list-style-type: none;
 }
 
 .my-fifth-hobby {
-  float: left;
   width: 42%;
   padding: 10px;
+  margin: 0;
+  list-style-type: none;
 }
 
 .my-sixth-hobby {
-  float: left;
   width: 42%;
   padding: 10px;
+  margin: 0;
+  list-style-type: none;
 }
 
 /***************************/
